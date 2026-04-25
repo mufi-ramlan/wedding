@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Naskh+Arabic:wght@400..700&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Halant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/animasi.css">
+  <title>Wedding Mufi & Ramlan</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="music-cover" id="musicCover">
+      <div class="cover-inner">
+
+        <img src="./img/cover4.webp" alt="cover">
+
+        <!-- TEXT OVERLAY -->
+        <div class="cover-text">
+          <p class="top-text">THE WEDDING OF</p>
+          <h1>Mufi & Ramlan</h1>
+
+          <div class="guest">
+            <p>Yang Terhormat,</p>
+            <h3 id="guestName">Nama Tamu</h3>
+          </div>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
+          ♪ Buka Undangan
+        </button>
+
+      </div>
+    </div>
+
+    <div class="thumbnail">
+      <div class="thmb-img">
+        <img src="./img/cover3.webp" alt="" class="bg-img">
+        <img src="./img/frame-01.webp" alt="" class="frame">
+
+        <div class="thmb-text">
+          <p class="color">The Wedding Of</p>
+          <h2>Mufi & Ramlan</h2>
+          <p>Senin, 18 Mei 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote-section">
+
+      <p class="quote-text">
+        "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri,
+        agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.
+        Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir"
+      </p>
+
+      <p class="quote-source">(QS Ar Rum : 21)</p>
+
+      <div class="date">
+        <div class="date-img">
+          <img src="./img/logo-wedding-brown.png" alt="">
+        </div>
+
+        <div class="countdown">
+          <h2 class="fade-down">Our Special Day</h2>
+
+          <div class="time-box">
+            <div class="time fade-down">
+              <h3 id="days">0</h3>
+              <p>Days</p>
+            </div>
+            <div class="time fade-down">
+              <h3 id="hours">0</h3>
+              <p>Hours</p>
+            </div>
+            <div class="time fade-down">
+              <h3 id="minutes">0</h3>
+              <p>Minutes</p>
+            </div>
+            <div class="time fade-down">
+              <h3 id="seconds">0</h3>
+              <p>Seconds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="profil-section">
+      <img src="./img/bg-flower2.jpeg" alt="" class="profil-section-bg">
+
+      <div class="profil">
+
+        <!-- Ornamen pojok kanan atas -->
+        <img src="./img/flower1.png" alt="" class="ornamen-tr">
+
+        <!-- Ornamen pojok kiri bawah -->
+        <img src="./img/flower2.png" alt="" class="ornamen-bl">
+
+        <!-- Konten -->
+        <div class="profil-text">
+          <p class="fade-down">
+            Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian
+            untuk menghadiri acara pernikahan kami :
+          </p>
+        </div>
+
+        <div class="profil-img">
+          <h3 class="fade-down">رملا عبد الواسع</h3>
+          <div class="profil-name">
+            <h2 class="fade-up">Ramlan Abdul Wasi', M.Pd</h2>
+            <p class="fade-up">
+              Putra ke-2 <br> Bapak Ust. Daud Dzohir S.Pd.I.
+              & Ibu Tati
+            </p>
+            <div class="dan">&</div>
+          </div>
+        </div>
+
+        <div class="profil-img-2">
+          <h3 class="fade-down">موفي اسوة حسنه نور فوزى</h3>
+          <div class="profil-name">
+            <h2 class="fade-up">Mufi Uswatun Hasanah Nur Fauzi, S.H</h2>
+            <p class="fade-up">
+              Putri ke-3 <br> Bapak KH.Suherman S.H
+              & Ibu Ida Nurhaida.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="event-section">
+    <div class="event-card">
+<div class="card-ornament card-ornament--bottom" aria-hidden="true">
+    <img src="./img/FLOWER-3.png" alt="">
+  </div>
+        <h2 class="event-title fade-down">AKAD NIKAH</h2>
+
+        <div class="event-date">
+          <span class="day-label fade-down">SENIN</span>
+          <span class="day-number fade-up"><h1>18</h1></span>
+          <span class="month-label fade-up">MEI</span>
+          <span class="year-label fade-up">2026</span>
+        </div>
+
+        <p class="event-time fade-down">Pukul : 08:00 WIB</p>
+        <p class="event-place fade-down">
+          Tempat : <br><strong>Kediaman Mempelai Wanita</strong><br>
+          (Pondok Pesanten Daarul Musyawarah)
+          Kp. Nyalindung Rt/Rw 002/010 <br>
+          Desa Panyindangan Kec. Cibinong Kab.Cianjur, Jawa Barat
+        </p>
+
+        <a href="https://maps.google.com/?q=Kp.+Nyalindung+Desa+Panyindangan+Cibinong+Cianjur"
+           target="_blank" class="btn-lokasi">
+          Lihat Lokasi
+        </a>
+
+        <div class="card-ornament card-ornament--top" aria-hidden="true">
+    <img src="./img/FLOWER-3.png" alt="">
+  </div>
+      </div>
+
+
+      <div class="event-card">
+        <div class="card-ornament card-ornament--bottom" aria-hidden="true">
+    <img src="./img/FLOWER-3.png" alt="">
+  </div>
+
+        <h2 class="event-title fade-down">RESEPSI</h2>
+
+        <div class="event-date">
+          <span class="day-label fade-down">SENIN</span>
+          <span class="day-number fade-up"><h1>18</h1></span>
+          <span class="month-label fade-up">MEI</span>
+          <span class="year-label fade-up">2026</span>
+        </div>
+
+        <p class="event-time fade-down">Pukul : 10:00 WIB – Selesai</p>
+        <p class="event-place fade-down">
+          Tempat : <br><strong>Kediaman Mempelai Wanita</strong><br>
+          (Pondok Pesanten Daarul Musyawarah)
+          Kp. Nyalindung Rt/Rw 002/010 <br>
+          Desa Panyindangan Kec. Cibinong Kab.Cianjur, Jawa Barat
+        </p>
+
+        <a href="https://maps.google.com/?q=Kp.+Nyalindung+Desa+Panyindangan+Cibinong+Cianjur"
+           target="_blank" class="btn-lokasi">
+          Lihat Lokasi
+        </a>
+              <div class="card-ornament card-ornament--top" aria-hidden="true">
+    <img src="./img/FLOWER-3.png" alt="">
+  </div>
+
+      </div>
+
+
+</div>
+
+    </section>
+
+    <section class="love-story">
+      <h2 class="judul">Love Story</h2>
+      <div class="card">
+        <img src="./img/cover4.webp" alt="couple" class="gambar">
+        <div class="konten">
+          <h3 class="fade-down">Asmaraloka</h3>
+          <p class="fade-blur">Sebuah kisah yang memilih untuk tetap dan terus menetap.</p>
+
+          <h3 class="fade-down">Love Story</h3>
+          <p class="fade-blur">
+            Jalan menuju rumah itu tidak mudah.
+            Ada jarak yang harus ditempuh, ragu yang harus dikalahkan,
+            dan keberanian yang harus dipilih diatas segalanya. Ia datang dengan satu niat sederhana yakni <em>ingin bertemu</em>. <br>
+            <br>
+            Terlalu panjang jika diceritakan dari awal, karena cinta kami bukan tentang bagaimana semuanya dimulai
+            melainkan tentang bagaimana kami bertahan.
+            Kami hanya dua insan biasa, sebagaimana mestinya sepasang kekasih yang tak luput dari problematika dan alfa. <br>
+            <br>
+            Ribuan tangis, jutaan tawa. <br>
+            Menjadi saksi bagaimana kata "yakin" terus kami ucapkan, untuk kami yang sempat rapuh.
+            Kendatipun jutaan maaf dan ribuan terimakasih yang terucap hanya untuk tujuan paling indah.
+            Tidak ada yang benar-benar kebetulan antara kami, melainkan Allah SWT manggariskan pertemuan kami dengan cara yang tak biasa.
+          </p>
+
+          <h3 class="fade-down">Engagement</h3>
+          <p class="fade-blur">
+            Hingga pada satu titik, kami sepakat memilih untuk melangkah lebih jauh.
+            Dengan dinamika keadaan yang tak selalu berpihak.
+            <br><br>
+            Bukan karena segalanya sempurna,
+            tetapi karena kami yakin untuk saling melengkapi tidaklah mudah.
+            Namun disanalah kami belajar, bahwa bertahan adalah bentuk cinta yang paling nyata. <br>
+            <br>
+            Dengan segala kurang dan lebih,
+            kami mengikat janji untuk tetap bersama, apa pun ceritanya.
+            Akhirnya kami pertemukan dua keluarga, menyatukan do'a-do'a dan satu restu dari keduanya.
+          </p>
+
+          <h3 class="fade-down">Wedding</h3>
+          <p class="fade-blur">
+            Kini kami bersiap memulai kisah baru sebagai "kita".
+            <br>
+            Kami memilih percaya bahwa Sang Maha Cinta tak pernah salah mencatat takdir di lauhil mahfudz.
+            <br>Semoga ikatan suci ini, <br> Allah SWT selalu meridhoi, <br> sampai akhir nanti, <br>di syurga-NYA sang ilahi.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="gift-container">
+
+      <div class="gift-card" id="mainCard">
+        <h3>Wedding Gift</h3>
+        <p>Doa restu Bapak/Ibu Saudara/i adalah anugerah terindah bagi kami. <br>
+Namun bila hati Bapak/Ibu Saudara/i tergerak untuk berbagi,
+kami menerimanya bukan sekadar pemberian,
+melainkan jejak kasih dan sebagai titipan kebaikan. <br>
+Semoga Allah SWT balas dengan keberkahan tanpa batas.</p>
+
+        <button id="toggleBtn">Buka</button>
+
+        <div class="extra-cards" id="extraCards">
+
+          <!-- CARD 1 -->
+          <div class="sub-card">
+            <div class="rekening-row">
+              <span class="rek-nomor" id="rek1">7196994089</span>
+              <span class="rek-nama">A/N Mufi Uswatun</span>
+            </div>
+            <button class="copy-btn" onclick="copyRek('rek1', this)">
+              Salin
+            </button>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="sub-card">
+            <div class="rekening-row">
+              <span class="rek-nomor" id="rek2">1060591175</span>
+              <span class="rek-nama">A/N Ramlan Abdul Wasi</span>
+            </div>
+            <button class="copy-btn" onclick="copyRek('rek2', this)">
+              Salin
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MUSIC INDICATOR -->
+    <div class="music-indicator" id="musicIndicator" onclick="toggleMusicIndicator()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+  </div> <!-- penutup .container -->
+
+  <section class="closing-section">
+  <p class="closing-sub">Terimakasih</p>
+  <p class="closing-body">
+ atas setiap langkah yang mendekat,
+atas waktu yang diluangkan,
+dan doa-doa yang dilangitkan. 
+<br>
+<br>
+Kehadiran Bapak/Ibu/Saudara/i bukan sekadar memenuhi undangan,
+melainkan menjadi saksi awal perjalanan ibadah kami. <br> <br> <br>
+  </p>
+  <h2 class="closing-name">Regards <br>Mufi & Ramlan</h2>
+</section>
+<footer class="footer-section">
+  <div class="name"><p>
+    Made With Love By
+  </p></div>
+  <img src="./img/Watermark.png" alt="logo" class="footer-logo">
+</footer>
+  <script src="./js/style.js"></script>
+  <script src="./generator/generator.js"></script>
+  <audio id="bgMusic" loop>
+  <source src="./music/bgm.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
