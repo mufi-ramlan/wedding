@@ -37,27 +37,44 @@ function copyLink() {
     return;
   }
 
-  if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(linkHasil).then(() => {
-      alert("Link berhasil disalin!");
-    });
+  // Coba modern clipboard API dulu
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(linkHasil)
+      .then(() => alert("Link berhasil disalin!"))
+      .catch(() => fallbackCopy(linkHasil)); // ← kalau gagal, pakai fallback
   } else {
-    const textarea = document.createElement("textarea");
-    textarea.value = linkHasil;
-    textarea.style.position = "fixed";
-    textarea.style.opacity = "0";
-    document.body.appendChild(textarea);
-    textarea.focus();
-    textarea.select();
+    fallbackCopy(linkHasil);
+  }
+}
 
-    const berhasil = document.execCommand("copy");
-    document.body.removeChild(textarea);
+function fallbackCopy(text) {
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
 
-    if (berhasil) {
-      alert("Link berhasil disalin!");
-    } else {
-      alert("Gagal menyalin. Coba salin manual.");
-    }
+  // Wajib: posisi harus visible & dalam viewport di iOS/Android
+  textarea.style.position = "fixed";
+  textarea.style.left = "0";
+  textarea.style.top = "0";
+  textarea.style.opacity = "0";
+  textarea.setAttribute("readonly", ""); // cegah keyboard muncul di HP
+  
+  document.body.appendChild(textarea);
+  
+  // Khusus iOS Safari
+  const range = document.createRange();
+  range.selectNodeContents(textarea);
+  const selection = window.getSelection();
+  selection.removeAllRanges();
+  selection.addRange(range);
+  textarea.setSelectionRange(0, 999999); // ← kunci untuk iOS
+
+  const berhasil = document.execCommand("copy");
+  document.body.removeChild(textarea);
+
+  if (berhasil) {
+    alert("Link berhasil disalin!");
+  } else {
+    alert("Gagal menyalin. Coba salin manual.");
   }
 }
 

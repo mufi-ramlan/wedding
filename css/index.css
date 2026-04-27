@@ -64,6 +64,7 @@ body.no-scroll {
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +97,7 @@ body.no-scroll {
 /* TEXT */
 .cover-text {
   position: absolute;
-  bottom: 120px;
+  bottom: 210px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -119,7 +120,9 @@ body.no-scroll {
   font-family: 'Cinzel', serif;
   font-size: 2rem;
   margin: 6px 0 20px;
+  font-weight: 400;
 }
+
 
 /* Guest */
 .guest {
@@ -145,11 +148,11 @@ body.no-scroll {
 /* BUTTON */
 .music-btn {
   position: absolute;
-  bottom: 30px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   
-  background: rgba(255, 249, 249, 0.85);
+  background: #cda471;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(190, 138, 25, 0.4);
   border-radius: 50px;
@@ -157,7 +160,7 @@ body.no-scroll {
   
   font-family: 'Cinzel', serif;
   font-size: 0.85rem;
-  color: #be8a19;
+  color: #e6e6e6;
   cursor: pointer;
   
   letter-spacing: 0.1em;
@@ -232,7 +235,7 @@ body.no-scroll {
 }
 
 .thmb-text .color {
-  color: #d8b281;
+  color: #cda471;
 }
 
 .thmb-text h2 {
@@ -595,7 +598,7 @@ body.no-scroll {
 
 .judul {
   text-align: center;
-  color: #c93e18;
+  color: #ffffff;
   margin-bottom: 20px;
   font-size: clamp(1.7rem, 4vw, 1.6rem); 
    font-family: 'Cinzel', serif;;
@@ -1081,7 +1084,7 @@ button {
   flex-direction: column;
   font-size: 13px;
 
-  background: linear-gradient(390deg, #100C08, #320010);
+  background: linear-gradient(410deg, #100C08, #320010);
 }
 
 .name p {
