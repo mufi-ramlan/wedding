@@ -15,8 +15,8 @@ function startAnimations() {
   // =============================
   // COUNTDOWN
   // =============================
-  const targetDate = new Date(2026, 4, 18).getTime();
-
+  const targetDate = new Date(2026, 6, 5, 8, 0, 0).getTime();
+  
   const elDays    = document.getElementById("days");
   const elHours   = document.getElementById("hours");
   const elMinutes = document.getElementById("minutes");
